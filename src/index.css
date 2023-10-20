@@ -41,7 +41,10 @@ body{
   font-weight: 500;
   color: hsl(219, 14%, 63%);
 }
-
+.header__p:hover{
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
 .notification{
   display: flex;
   flex-flow: row;
@@ -60,12 +63,20 @@ body{
   font-size: 1rem;
   font-weight: 600;
 }
+.notification__user:hover{
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
 .notification__message{
   color: hsl(219, 12%, 42%);
 }
 .notification__content{
   color: hsl(219, 12%, 42%);
   font-weight: 600;
+}
+.notification__content:hover{
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
 }
 .notification__body{
   width: 100%;
@@ -101,12 +112,19 @@ body{
   margin-block-start: 1rem;
   border: 1px solid hsl(205, 33%, 90%);
 }
+.notification__private-message:hover{
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(211, 68%, 94%);
+}
 .notification__join,
 .notification__left{
   color: hsl(219, 66%, 38%);
 }
 .comment-picture{
   margin-inline-start: .25rem;
+}
+.comment-picture{
+  cursor: pointer;
 }
 
 
