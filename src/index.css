@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(211, 68%, 94%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App{
+  max-width: 650px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+.header{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 2rem;
+}
+.header__h1{
+  font-size: 1.25rem;
+}
+.header__span{
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(210, 60%, 98%);
+  padding: .25rem .75rem;
+  margin-inline: .5rem;
+  border-radius: 5px;
+}
+.header__p{
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(219, 14%, 63%);
+}
+
+.notification{
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  padding: 1rem .5rem;
+  margin-block-end: 1rem;
+  border-radius: 10px;
+}
+.notification img{
+  width: 40px;
+  height: 40px;
+  margin-inline-end: .75rem;
+}
+
+.notification__user{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.notification__message{
+  color: hsl(219, 12%, 42%);
+}
+.notification__content{
+  color: hsl(219, 12%, 42%);
+  font-weight: 600;
+}
+.notification__body{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.red-dot{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-inline: .5rem;
+  background-color: red;
+}
+.read-false{
+  background-color: hsl(210, 60%, 98%);
+}
+.read-true{
+  background-color: hsl(0, 0%, 100%);
+}
+.notification__time{
+  font-size: 1rem;
+  color: hsl(219, 14%, 63%);
+  margin-block-start: .25rem;
+}
+
+.notification__private-message{
+  font-weight: 500;
+  display: block;
+  padding: 1rem;
+  margin-block-start: 1rem;
+  border: 1px solid hsl(205, 33%, 90%);
+}
+.notification__join,
+.notification__left{
+  color: hsl(219, 66%, 38%);
+}
+.comment-picture{
+  margin-inline-start: .25rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+  body{
+    padding-block: 2rem;
+  }
+  .App{
+    border-radius: 10px;
+  }
+  .notification{
+    margin-block-end: .5rem;
+  }
+  .notification:last-child{
+    margin: 0;
+  }
+  .header{
+    padding-block: 1rem;
+    margin: 0;
+  }
+}
