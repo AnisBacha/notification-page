@@ -1,7 +1,7 @@
 const SingleNotification = ({notification}) => {
     return (
         <section className={`notification read-${notification.read}`}>
-            <img src={require(`${notification.avatar}`)} width={'90'} height={'90'}/>
+            <img src={require(`${notification.avatar}`)} alt="avatar" width={'90'} height={'90'}/>
             <div className="notification__body">
                 <div className="notification__body-info">
                     <span className="notification__user">
@@ -22,7 +22,7 @@ const SingleNotification = ({notification}) => {
                     )}
                 </div>
                 {notification.action === 'comment' && (
-                    <img className='comment-picture' src={require(`${notification.picture}`)} alt='picture' />
+                    <img className='comment-picture' src={require(`${notification.picture}`)} alt='comment picture' />
                 )}
                 
             </div>
