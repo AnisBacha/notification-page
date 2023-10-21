@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: hsl(211, 68%, 94%);
+  background-color: hsl(210, 60%, 98%);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1rem;
   min-height: 100vh;
@@ -17,7 +17,7 @@ body{
 .App{
   max-width: 650px;
   background-color: hsl(0, 0%, 100%);
-  padding: 1rem;
+  padding: 2rem;
 }
 .header{
   display: flex;
@@ -28,6 +28,7 @@ body{
 }
 .header__h1{
   font-size: 1.25rem;
+  padding-block-end: 1rem;
 }
 .header__span{
   background-color: hsl(219, 85%, 26%);
